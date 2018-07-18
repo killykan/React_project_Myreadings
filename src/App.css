@@ -1,21 +1,44 @@
 html, body, .root {
   height: 100%;
+  max-width: 90%;
+  margin: 0 auto;
 }
 body {
   line-height: 1.5;
+  color: #90ee90;
 }
 body, .app {
-  background: white;
+  background: #000;
 }
 
 /* main page */
 
+.extraClass {
+    font-size: 20px !important;
+    pointer-events: auto !important;
+    text-align: center;
+    border-radius: 20px;
+
+
+}
+.extraClass:hover {
+visibility: visible !important;
+opacity: 1 !important;
+}
+
+
+
 .list-books-title {
+  display: flex;
+  justify-content: space-around;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
   background: #2e7c31;
   text-align: center;
 }
 .list-books-title h1 {
+
   font-weight: 400;
   margin: 0;
   color: white;

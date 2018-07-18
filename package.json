@@ -1,12 +1,14 @@
 {
   "dependencies": {
     "by": "^0.2.3",
+    "debounce": "^1.1.0",
     "escape-string-regexp": "^1.0.5",
     "form-serialize": "^0.7.2",
     "prop-types": "^15.6.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router-dom": "^4.3.1",
+    "react-tooltip": "^3.6.1",
     "sort": "0.0.3"
   },
   "devDependencies": {
