@@ -17,9 +17,9 @@ class SearchPage extends Component {
   /*method applied when a change occurs in the input field*/
 
   research = (evt) => {
-    const query = evt.target.value.trim()
+    const query = evt.target.value
     this.setState({query:query})
-    if(query){
+    if(query.trim()){
       BooksAPI.search(query,30).then(result => {
         if(result.length>0){
           this.setState({listResult: result})

@@ -28,11 +28,11 @@ class BookList extends Component {
                 <div className="book-shelf-changer">
                   <select onChange={(e) => updateShelf(book, e.target.value)}
                     defaultValue={actualShelf}>
-                    <option value="none" disabled>Move to...</option>
+                    <option value="move" disabled>Move to...</option>
                     <option value="currentlyReading">Currently Reading</option>
                     <option value="wantToRead">Want to Read</option>
                     <option value="read">Read</option>
-                    <option value="none">Delete</option>
+                    <option value="none">Not in Shelves</option>
                   </select>
                 </div>
             </div>

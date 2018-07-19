@@ -31,9 +31,9 @@ class App extends Component {
   updateShelf = (newBook, newShelf) => {
     BooksAPI.update(newBook, newShelf).then(response => {
     newBook.shelf = newShelf;
-    var updatedList = this.state.books.filter(book => book.id !== newBook.id);
+    let updatedList = this.state.books.filter(book => book.id !== newBook.id);
     updatedList.push(newBook);
-    this.setState({book: updatedList});
+    this.setState({books: updatedList});
     })
   }
 
